@@ -231,7 +231,6 @@
       transform: translateX(3px);
     }
 
-    /* Note at bottom */
     .note {
       margin-top: 20px;
       font-size: 13px;
@@ -240,7 +239,6 @@
       animation: fade-in 0.5s 0.45s both;
     }
 
-    /* Countdown ring */
     .countdown-wrap {
       margin-top: 20px;
       display: flex;
@@ -266,33 +264,17 @@
 </head>
 <body>
 
-  <nav class="nav">
-    <span class="nav-logo">Hi :)<span></span></span>
-  </nav>
-
   <div class="card">
 
-    <div class="icon-badge">
-      <span class="material-symbols-rounded">moving</span>
-    </div>
 
     <h1>The sites moving!</h1>
 
-    <p>
-      Many new tools are underway
-    </p>
-
-    <div class="domain-chip">
-      <span class="material-symbols-rounded">link</span>
-      faelan.dev
-    </div>
-
-    <p>This URL will be removed soon</p>
+    <p>This URL will no longer be used and eventually removed</p>
 
     <div class="divider"></div>
 
-    <a class="btn-redirect" href="https://faelan.dev">
-      Take me to faelan.dev
+    <a class="btn-redirect" href="https://faelan.org">
+      Continue to new site
       <span class="material-symbols-rounded">arrow_forward</span>
     </a>
 
@@ -304,15 +286,15 @@
   </div>
 
   <script>
-    // Countdown + auto-redirect
-    let t = 30;
+
+    let t = 20;
     const el = document.getElementById('countdown-num');
     const timer = setInterval(() => {
       t--;
       el.textContent = t;
       if (t <= 0) {
         clearInterval(timer);
-        window.location.href = 'https://faelan.dev';
+        window.location.href = 'https://faelan.org';
       }
     }, 1000);
   </script>
